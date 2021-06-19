@@ -1,20 +1,20 @@
 variable "aws_region" {
-    type    = string
+    type = string
     default = "us-east-1"
 }
 
 variable "environment" {
-    type        = string
-    default     = "dev"
+    type = string
+    default = "dev"
 }
 
 variable "project_name" {
-    type    = string
+    type = string
     default = "my-project"
 }
 
 variable "project_vpc_cidr" {
-    type    = string
+    type = string
     default = "10.10.0.0/16"
 }
 

@@ -8,6 +8,11 @@ variable "profile" {
     default = ""
 }
 
+variable "environment" {
+    type = string
+    default = "dev"
+}
+
 variable "repositories" {
     type = list(object({
         name = string

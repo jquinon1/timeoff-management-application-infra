@@ -22,3 +22,8 @@ variable "target_group_backend_port" {
     type = number
     default = 80
 }
+
+variable "alb_certificate_arn" {
+    type = string
+    default = ""  
+}

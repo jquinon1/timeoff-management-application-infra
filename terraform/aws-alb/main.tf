@@ -65,14 +65,14 @@ module "alb" {
 			target_group_index = 0
 		}
 	]   
-	# https_listeners = [
-	# 	{
-	# 		port               = 445
-	# 		certificate_arn    = var.alb_certificate_arn
-	# 		ssl_policy         = "ELBSecurityPolicy-TLS-1-2-2017-01"
-	# 		target_group_index = 0
-	# 	}
-	# ]   
+	https_listeners = [
+		{
+			port               = 443
+			certificate_arn    = var.alb_certificate_arn
+			ssl_policy         = "ELBSecurityPolicy-TLS-1-2-2017-01"
+			target_group_index = 0
+		}
+	]   
 	tags = {
 		Name = "${var.environment}-${var.project_name}-alb"
 	}
